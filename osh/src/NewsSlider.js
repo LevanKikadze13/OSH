@@ -26,22 +26,23 @@ function NewsSlider() {
 
   const renderSlides = () => {
     const slides = [
-      // Replace with your actual image data
-      { src: 'https://...', alt: 'Image 1' },
-      { src: 'https://...', alt: 'Image 2' },
-      { src: 'https://...', alt: 'Image 3' },
+      [{ src: 'https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg', alt: 'Image 1' }],
+      [{ src: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg', alt: 'Image 2' }],
+      [{ src: 'https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg', alt: 'Image 3' }]
     ];
-
-    return (
-        <div className="slide active fade-in-out"> 
-          <div className="slide-content-container">
-            {slides.map((slide, index) => (
-              <img key={index} src={slide.src} alt={slide.alt} style={{ objectFit: 'cover' }} /> 
-            ))}
+  
+    return slides.map((slide, index) => (
+      <div key={index} className={`slide ${currentSlide === index + 1 ? 'active' : ''} fade-in-out`}>
+        <div className="slide-content-container">
+          <img className='news-image' src={slide[0].src} alt={slide[0].alt} style={{ objectFit: 'cover' }} />
+          <div className='news-text-container'>
+              Hello world
           </div>
         </div>
-      );
+      </div>
+    ));
   };
+  
 
   const renderDots = () => {
     return new Array(3).fill(null).map((_, index) => (
