@@ -86,28 +86,65 @@
 
 .burger-menu{
     background-color: yellowgreen;
-    width: 70%;
+    /* width: 70%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+#nav-content.show {
+    display: flex;
+  }
+  
+  #nav-content.hide {
+    display: none;
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+  }
+  
+  .backdrop.show {
+    display: block;
+  }
+  
+  .burger-menu-content {
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    z-index: 11;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .burger-menu-content.show {
+    transform: translateX(0);
+  }
 
 
 @media (max-width: 768px) {
     #header-content-middle, #header-content-right{
-        display: none;
+        /* display: none; */
     }
     .burger-menu{
-        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
         height: 100vh;
+        right: 0px;
     }
-    #header-content-left{
-        position: absolute;
-        left: 10%;
-    }
+
     .burger-menu-icon{
         display: block;
     }
-   
 }
