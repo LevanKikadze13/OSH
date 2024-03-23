@@ -1,6 +1,19 @@
-/* Navbar styles */
+
+/* .FlexCentered{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 .navbar {
     padding: 1rem;
+  }
+
+  #header{
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   
   .navbar-brand {
@@ -26,8 +39,8 @@
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
   }
   
-  /* Media queries */
-  @media (max-width: 767.98px) {
+ 
+  @media (max-width: 768px) {
     .navbar-nav,
     .navbar-nav .nav-link,
     .navbar-nav .nav-dropdown,
@@ -64,4 +77,4 @@
       display: block;
       margin-bottom: 0.5rem;
     }
-  }
+  } */
