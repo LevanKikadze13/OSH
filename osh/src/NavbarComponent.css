@@ -78,3 +78,33 @@
       margin-bottom: 0.5rem;
     }
   } */
+
+  .menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: yellowgreen; */
+  }
+  .options{
+    display: flex;
+  }
+  .dropdown-child{
+    background-color: yellowgreen;
+    border-bottom: 1px solid black;
+  }
+
+  @media (max-width: 1000px){
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: violet; */
+      }
+      .options{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      
+  }
