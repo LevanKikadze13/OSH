@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container, Offcanvas } from 'react-bootstrap';
 import './NavbarComponent.css'
-import { Ripple, initMDB } from "mdb-ui-kit";
 
 const AppNavbar = () => {
-    initMDB({ Ripple });
     
     const [showOffcanvas, setShowOffcanvas] = useState(false);
 
@@ -46,7 +44,7 @@ const AppNavbar = () => {
 
                                 <Nav>
                                     <div className="header-content header-content-right" id="header-content-right">
-                                        <button type="button" class="btn btn-primary" data-mdb-ripple-init>Log in</button>
+                                        <a href="#" className="btn btn-primary me-2">Login</a>
                                         <a href="#" className="btn ">Register</a>
                                     </div>
                                 </Nav>
