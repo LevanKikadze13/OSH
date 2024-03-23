@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "mdb-ui-kit": "^7.2.0",
     "react-media": "^1.10.0"
   }
 }
