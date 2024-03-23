@@ -44,8 +44,8 @@ const AppNavbar = () => {
 
                                 <Nav>
                                     <div className="header-content header-content-right" id="header-content-right">
-                                        <a href="#" className="btn btn-primary me-2">Login</a>
-                                        <a href="#" className="btn ">Register</a>
+                                        <a href="#" className="btn btn-primary me-2">შესვლა</a>
+                                        <a href="#" className="btn ">რეგისტრაცია</a>
                                     </div>
                                 </Nav>
                             </Nav>

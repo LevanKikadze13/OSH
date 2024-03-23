@@ -1,9 +1,14 @@
 
+.mb-3{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: yellowgreen;
+}
   .menu-items{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: yellowgreen; */
+    
   }
   .options{
     display: flex;

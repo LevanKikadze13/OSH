@@ -7,12 +7,6 @@ import ResponsiveSwiper from './NewsSwiper';
 
 
 export function HomePage() {
-  const [displayBurgerMenu, setDisplayBurgerMenu] = useState(true)
-
-  const handleBurgerMenuClick = () => {
-    setDisplayBurgerMenu(!displayBurgerMenu);
-  }
-
   return (
     <div id="home-page">
       <NavbarComponent/>

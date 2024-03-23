@@ -14,8 +14,9 @@
 } */
 
 .mySwiper {
+    margin-top: 10vh;
     width: 90%;
-    height: 30%;
+    height: 45%;
   }
   
   .slide {
