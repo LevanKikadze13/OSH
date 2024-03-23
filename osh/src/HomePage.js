@@ -4,8 +4,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './HomePage.css';
 import NavbarComponent from './NavbarComponent';
 import ResponsiveSwiper from './Slider';
+import AppNavbar from './NavbarComponent';
 
-function HomePage() {
+export function HomePage() {
   const [displayBurgerMenu, setDisplayBurgerMenu] = useState(true)
 
   const handleBurgerMenuClick = () => {
@@ -14,7 +15,7 @@ function HomePage() {
 
   return (
     <div id="home-page">
-      <NavbarComponent/>
+      <AppNavbar></AppNavbar>
       <ResponsiveSwiper></ResponsiveSwiper>
 
     </div>
