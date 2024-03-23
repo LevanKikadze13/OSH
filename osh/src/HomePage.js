@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import NewsSlider from './NewsSlider';
 import './HomePage.css';
+import NavbarComponent from './NavbarComponent';
 
 function HomePage() {
   const [displayBurgerMenu, setDisplayBurgerMenu] = useState(true)
@@ -13,7 +14,7 @@ function HomePage() {
 
   return (
     <div id="home-page">
-      <div id="header">
+      {/* <div id="header">
         <div className="header-content" id="header-content-left">
           <h1 className="logo-container">
             <img className="logo" src="https://oshe.ge/images/custom/logo-light.png" alt="Logo" />
@@ -56,7 +57,8 @@ function HomePage() {
           </div>
         </div>
 
-      </div>
+      </div> */}
+      <NavbarComponent></NavbarComponent>
       {/* <NewsSlider/> */}
     </div>
   );
