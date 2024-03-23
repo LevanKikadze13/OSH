@@ -1,0 +1,36 @@
+/* .slide{
+    position: relative;
+    width: 70%;
+    max-width: 70%;
+    height: 10%;
+    background-color: yellowgreen;
+}
+.slide-image-container{
+    height: 100%;
+    width: 100%;
+}
+.slide-image{
+    width: 150px;
+} */
+
+.mySwiper {
+    width: 90%;
+    height: 30%;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide-image-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
