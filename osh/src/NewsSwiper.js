@@ -1,37 +1,21 @@
-import React from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
-SwiperCore.use([Navigation, Pagination]);
-
-const ResponsiveSwiper = () => {
+export default () => {
   return (
     <Swiper
+      spaceBetween={50}
       slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
       breakpoints={{
+        // When window width is >= 640px
         640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 50,
+          slidesPerView: 1,
         },
       }}
-      className="mySwiper"
     >
       <SwiperSlide>Slide 1</SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
@@ -41,5 +25,3 @@ const ResponsiveSwiper = () => {
     </Swiper>
   );
 };
-
-export default ResponsiveSwiper;
