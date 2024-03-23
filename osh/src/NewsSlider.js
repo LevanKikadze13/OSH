@@ -36,7 +36,7 @@ function NewsSlider() {
         <div className="slide-content-container">
           <img className='news-image' src={slide[0].src} alt={slide[0].alt} style={{ objectFit: 'cover' }} />
           <div className='news-text-container'>
-              Hello world
+          Lorem ipsum dolor sit amet, dsadasdashajdkalsdlksdaklkldsakkkkkkkkkk
           </div>
         </div>
       </div>
