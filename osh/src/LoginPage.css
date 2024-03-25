@@ -3,9 +3,9 @@ body{
     height: 100%;
 }
 .text-right{
-    background-color: white;
-    padding: 0px;
     margin-top: 10px;
     cursor: pointer;
 }
-
+.login-register-button{
+    width: 100%;
+}

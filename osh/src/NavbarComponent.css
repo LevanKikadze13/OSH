@@ -1,9 +1,4 @@
 
-.mb-3{
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: yellowgreen;
-}
   .menu-items{
     display: flex;
     align-items: center;
@@ -25,7 +20,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        /* background-color: violet; */
       }
       .options{
         width: 100%;
