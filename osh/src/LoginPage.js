@@ -1,18 +1,18 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComponent from './NavbarComponent';
+import './LoginPage.css';
 
 const LoginPage = () => {
   return (
-    <div className="container my-5">
-    <NavbarComponent></NavbarComponent>
-      <div className="row justify-content-center">
+    <div className="container-fluid">
+      <div className="row justify-content-center mt-5">
         <div className="col-md-6">
+          {/* Header space */}
+          <div className="mb-4" style={{ height: '100px' }}></div>
+
           <div className="card">
-            <div className="card-header bg-primary text-white">
-              <h4 className="mb-0">Login</h4>
-            </div>
             <div className="card-body">
+              <h5 className="card-title text-center mb-4">Login</h5>
               <form>
                 <div className="form-group">
                   <label htmlFor="email">Email address</label>
@@ -29,24 +29,24 @@ const LoginPage = () => {
                     type="password"
                     className="form-control"
                     id="password"
-                    placeholder="Enter password"
+                    placeholder="Password"
                   />
+                </div>
+                <div className="text-right mb-3">
+                  <a href="#" className="text-muted">
+                    Forgot password?
+                  </a>
                 </div>
                 <button type="submit" className="btn btn-primary btn-block">
                   Login
                 </button>
+                <div className="text-center mt-3">
+                  <span className="text-muted">or</span>
+                </div>
+                <button type="button" className="btn btn-secondary btn-block mt-3">
+                  Register
+                </button>
               </form>
-              <div className="text-center my-3">
-                <small>
-                  <a href="#">Forgot Password?</a>
-                </small>
-              </div>
-              <div className="text-center">
-                <small>or</small>
-              </div>
-              <div className="text-center mt-3">
-                <button className="btn btn-secondary">Register</button>
-              </div>
             </div>
           </div>
         </div>

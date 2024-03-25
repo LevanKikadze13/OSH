@@ -1,18 +1,3 @@
-/* .slide{
-    position: relative;
-    width: 70%;
-    max-width: 70%;
-    height: 10%;
-    background-color: yellowgreen;
-}
-.slide-image-container{
-    height: 100%;
-    width: 100%;
-}
-.slide-image{
-    width: 150px;
-} */
-
 .mySwiper {
     margin-top: 10vh;
     width: 90%;
@@ -55,6 +40,6 @@
     margin-bottom: 0.5rem;
   }
   
-  .slide-text {
-    font-size: 1.2rem;
-  }
+.slide-text{
+  font-size: clamp(10px, 1.2vw, 24px);
+}

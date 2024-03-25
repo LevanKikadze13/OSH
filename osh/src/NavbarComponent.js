@@ -33,11 +33,11 @@ const AppNavbar = () => {
                                 <br></br>
                                 <div className='options'>
                                     <Nav.Link className='nav-item option' href="#">Option 1</Nav.Link>
-                                    <NavDropdown className='nav-item option' title="Option2" id="offcanvas-dropdown">
+                                    <NavDropdown className='nav-item option' title="Option2" id="offcanvas-dropdown" >
                                         <NavDropdown.Item className='dropdown-child' href="#">Dropdown Item 1</NavDropdown.Item>
                                         <NavDropdown.Item className='dropdown-child' href="#">Dropdown Item 2</NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item className='dropdown-child' href="#">Dropdown Item 3</NavDropdown.Item>
+                                        <NavDropdown.Divider/>
+                                        <NavDropdown.Item className='dropdown-child'  href="#">Dropdown Item 3</NavDropdown.Item>
                                     </NavDropdown>
                                     <Nav.Link className='nav-item option' href="#">Option 3</Nav.Link>
                                 </div>
@@ -45,7 +45,7 @@ const AppNavbar = () => {
                                 <Nav>
                                     <div className="header-content header-content-right" id="header-content-right">
                                         <a href="#" className="btn btn-primary me-2">შესვლა</a>
-                                        <a href="#" className="btn ">რეგისტრაცია</a>
+                                        <a href="#" className="btn">რეგისტრაცია</a>
                                     </div>
                                 </Nav>
                             </Nav>
