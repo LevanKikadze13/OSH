@@ -43,7 +43,7 @@ const LoginPage = () => {
                   <div className="text-center mt-3">
                     <span className="text-muted">or</span>
                   </div>
-                  <button type="button" className="btn btn-secondary btn-block mt-3 login-register-button">
+                  <button type="button" className="btn btn-secondary btn-block mt-3 login-register-button" id='register-button'>
                     Register
                   </button>
                 </form>

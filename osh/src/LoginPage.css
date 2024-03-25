@@ -7,5 +7,9 @@ body{
     cursor: pointer;
 }
 .login-register-button{
+    margin-top: 2%;
     width: 100%;
+}
+#register-button{
+    margin: 0px;
 }
