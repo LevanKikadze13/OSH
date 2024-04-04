@@ -37,13 +37,13 @@ const LoginPage = () => {
                       Forgot password?
                     </a>
                   </div>
-                  <button type="submit" className="btn btn-primary btn-block login-register-button">
-                    Login
+                  <button type="submit" className="btn btn-primary btn-block w-100 mt-2">
+                    Login 
                   </button>
-                  <div className="text-center mt-3">
+                  <div className="text-center my-2">
                     <span className="text-muted">or</span>
                   </div>
-                  <button type="button" className="btn btn-secondary btn-block mt-3 login-register-button" id='register-button'>
+                  <button type="button" className="btn btn-secondary btn-block  w-100" id='register-button'>
                     Register
                   </button>
                 </form>
