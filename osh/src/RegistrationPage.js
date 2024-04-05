@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './NavbarComponent';
+import { Link } from 'react-router-dom'
 
 const RegistrationPage = () => {
     const [FirstName, setFirstName] = useState('');
@@ -13,13 +14,11 @@ const RegistrationPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Check if passwords match
         if (password !== confirmPassword) {
             setShowAlert(true);
             return;
         }
 
-        // Perform registration logic here
         console.log('Registration successful!');
         console.log('Email:', email);
         console.log('Password:', password);
@@ -28,17 +27,18 @@ const RegistrationPage = () => {
     return (
         <div className="d-flex flex-column vh-100">
             <NavbarComponent></NavbarComponent>
-            {showAlert && (
-                <div class="alert alert-warning d-flex justify-content-center align-self-center align-items-center w-50" role="alert">
-                    <div>
-                        პაროლები არ ემთხვევა
-                    </div>
-                </div>
-            )}
-            <div className="container-fluid flex-grow-1 overflow-auto">
+
+            <div className="container-fluid flex-grow-1 overflow-auto ">
                 <div className="row justify-content-center mt-5">
                     <div className="col-lg-6 col-md-8 col-sm-10">
-                        <div className="card" style={{ width: '100%' }}>
+                        <div className="card  position-relative" style={{ width: '100%' }}>
+                            {showAlert && (
+                                <div className  ="alert alert-danger d-flex justify-content-center align-self-center align-items-center w-100  position-absolute" role="alert">
+                                    <div>
+                                        პაროლები არ ემთხვევა!
+                                    </div>
+                                </div>
+                            )}
                             <div className="card-body">
                                 <h5 className="card-title text-center mb-4">რეგისტრაცია</h5>
                                 <form onSubmit={handleSubmit}>
@@ -50,7 +50,7 @@ const RegistrationPage = () => {
                                                 type="text"
                                                 className="form-control"
                                                 id="FirstName"
-                                                placeholder="შეიყვანეთ თქვენი სახელი"
+                                                placeholder="შეიყვანეთ სახელი"
                                                 value={FirstName}
                                                 onChange={(e) => setFirstName(e.target.value)}
                                             />
@@ -62,7 +62,7 @@ const RegistrationPage = () => {
                                                 type="text"
                                                 className="form-control"
                                                 id="LastName"
-                                                placeholder="შეიყვანეთ თქვენი გვარი"
+                                                placeholder="შეიყვანეთ გვარი"
                                                 value={LastName}
                                                 onChange={(e) => setLastName(e.target.value)}
                                             />
@@ -75,7 +75,7 @@ const RegistrationPage = () => {
                                             type="email"
                                             className="form-control"
                                             id="email"
-                                            placeholder="შეიყვანეთ თქვენი ელ-ფოსტის მისამართი"
+                                            placeholder="შეიყვანეთ ელ-ფოსტის მისამართი"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                         />
@@ -110,9 +110,9 @@ const RegistrationPage = () => {
                                     <div className="text-center my-2">
                                         <span className="text-muted">ან</span>
                                     </div>
-                                    <button type="button" className="btn btn-secondary btn-block w-100" id="login-button">
+                                    <Link to="/LogIn" className="btn btn-secondary btn-block w-100" id="login-button">
                                         შესვლა
-                                    </button>
+                                    </Link>
                                 </form>
                             </div>
                         </div>
