@@ -28,90 +28,90 @@ const RegistrationPage = () => {
     return (
         <div className="d-flex flex-column vh-100">
             <NavbarComponent></NavbarComponent>
+            {showAlert && (
+                <div class="alert alert-warning d-flex justify-content-center align-self-center align-items-center w-50" role="alert">
+                    <div>
+                        პაროლები არ ემთხვევა
+                    </div>
+                </div>
+            )}
             <div className="container-fluid flex-grow-1 overflow-auto">
                 <div className="row justify-content-center mt-5">
                     <div className="col-lg-6 col-md-8 col-sm-10">
                         <div className="card" style={{ width: '100%' }}>
                             <div className="card-body">
-                                <h5 className="card-title text-center mb-4">Register</h5>
-                                {showAlert && (
-                                    <div class="alert alert-warning d-flex align-items-center" role="alert">
-                                    <div>
-                                      პაროლები არ ემთხვევა
-                                    </div>
-                                  </div>
-                                )}
+                                <h5 className="card-title text-center mb-4">რეგისტრაცია</h5>
                                 <form onSubmit={handleSubmit}>
-                                    <div className='row '>
+                                    <div className='row mb-3'>
                                         <div className="form-group col">
-                                            <label htmlFor="FirstName">სახელი</label>
+                                            <label htmlFor="FirstName" className='mb-1'>სახელი:</label>
                                             <input
                                                 required
                                                 type="text"
                                                 className="form-control"
                                                 id="FirstName"
-                                                placeholder="Enter your name"
+                                                placeholder="შეიყვანეთ თქვენი სახელი"
                                                 value={FirstName}
                                                 onChange={(e) => setFirstName(e.target.value)}
                                             />
                                         </div>
                                         <div className="form-group col">
-                                            <label htmlFor="LastName">გვარი</label>
+                                            <label htmlFor="LastName" className='mb-1'>გვარი:</label>
                                             <input
                                                 required
                                                 type="text"
                                                 className="form-control"
                                                 id="LastName"
-                                                placeholder="Enter your name"
+                                                placeholder="შეიყვანეთ თქვენი გვარი"
                                                 value={LastName}
                                                 onChange={(e) => setLastName(e.target.value)}
                                             />
                                         </div>
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="email">Email address</label>
+                                    <div className="form-group mb-3">
+                                        <label htmlFor="email" className='mb-1'>ელ-ფოსტის მისამართი:</label>
                                         <input
                                             required
                                             type="email"
                                             className="form-control"
                                             id="email"
-                                            placeholder="Enter email"
+                                            placeholder="შეიყვანეთ თქვენი ელ-ფოსტის მისამართი"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                         />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="password">Password</label>
+                                    <div className="form-group mb-3" >
+                                        <label htmlFor="password" className='mb-1'>პაროლი:</label>
                                         <input
                                             required
                                             type="password"
                                             className="form-control"
                                             id="password"
-                                            placeholder="Password"
+                                            placeholder="პაროლი"
                                             value={password}
                                             onChange={(e) => setPassword(e.target.value)}
                                         />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="confirmPassword">Confirm Password</label>
+                                    <div className="form-group mb-3">
+                                        <label htmlFor="confirmPassword" className='mb-1'>გაიმეორეთ პაროლი:</label>
                                         <input
                                             required
                                             type="password"
                                             className="form-control"
                                             id="confirmPassword"
-                                            placeholder="Confirm Password"
+                                            placeholder="გაიმეორეთ პაროლი"
                                             value={confirmPassword}
                                             onChange={(e) => setConfirmPassword(e.target.value)}
                                         />
                                     </div>
                                     <button type="submit" className="btn btn-primary btn-block w-100 mt-2">
-                                        Register
+                                        რეგისტრაცია
                                     </button>
                                     <div className="text-center my-2">
-                                        <span className="text-muted">or</span>
+                                        <span className="text-muted">ან</span>
                                     </div>
                                     <button type="button" className="btn btn-secondary btn-block w-100" id="login-button">
-                                        Login
+                                        შესვლა
                                     </button>
                                 </form>
                             </div>
