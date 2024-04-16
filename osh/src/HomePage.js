@@ -11,7 +11,6 @@ export function HomePage() {
     <div id="home-page">
       <NavbarComponent/>
       <ResponsiveSwiper/>
-
     </div>
   );
 }
